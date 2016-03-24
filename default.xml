@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <remote  name="github"
-           fetch="https://github.com" />
   <remote  name="aosp"
-           fetch=".." />
+           fetch="https://android.googlesource.com"
+           review="android-review.googlesource.com" />
   <remote name="elite"
            fetch="https://github.com/Elite-Kernels/" />
   <default revision="refs/tags/android-n-preview-1"
            remote="aosp"
+           sync-c="true"
+           sync-f="true"
            sync-j="4" />
 
 <!-- Elite Repo's -->
