@@ -15,7 +15,8 @@ Then to sync source, use this command:
 After syncing is done, use these commands to build:
 
     1.) . build/envsetup.sh
-    2.) brunch xxxx yyyy
+    2.) lunch xxxx yyyy
+    3.) make -j# otapackage
     
     xxxx= device name aka shamu
     yyyy= build type (user,userdebug,eng)*
