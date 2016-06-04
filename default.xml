@@ -4,17 +4,12 @@
   <remote  name="aosp"
            fetch="https://android.googlesource.com"
            review="android-review.googlesource.com" />
-  <remote name="elite"
-           fetch="https://github.com/Elite-Kernels/" />
   <default revision="refs/tags/android-n-preview-2"
            remote="aosp"
            sync-c="true"
            sync-f="true"
            sync-j="4" />
 
-<!-- Elite Repo's -->
-  <project path="manifest" name="Elite_manifest" remote="elite" revision="android-n-preview-1" />
-  <project path="device/moto/shamu" name="elite_device_moto_shamu" groups="device,shamu,broadcom_pdk" remote="elite" revision="android-n-preview-1" />
 
   <project path="build" name="platform/build" groups="pdk,tradefed" >
     <copyfile src="core/root.mk" dest="Makefile" />
